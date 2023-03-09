@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const index = fs.readFileSync('index.html');
 
-console.log('environment variables:', process.env);
+sessionStorage.setItem('redirectUrl', process.env['REDIRECT_URL'])
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});

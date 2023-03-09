@@ -6,7 +6,8 @@
 
 <body>
   <script>
-    // window.location.replace("https://putaringonit-angular.oa.r.appspot.com");
+    const redirectUrl = sessionStorage.getItem('redirectUrl');
+    window.location.replace(redirectUrl);
   </script>
 </body>
 
